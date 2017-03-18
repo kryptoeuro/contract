@@ -1,0 +1,25 @@
+{
+  "name": "cryptofiat-contract",
+  "version": "1.0.0",
+  "dependencies": {
+    "solc": "^0.4.10",
+    "web3": "^0.18.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "docker": "docker build -t cryptofiat_geth . && docker run -it -p=8545:8545 cryptofiat_geth",
+    "testrpc": "testrpc --gasLimit=0x8000000 --mnemonic cryptofiat",
+    "install-contract": "node build-local.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cryptofiat/contract.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cryptofiat/contract/issues"
+  },
+  "homepage": "https://github.com/cryptofiat/contract#readme"
+}

@@ -1,0 +1,4 @@
+abi
+node_modules
+*.*
+!*.sol
