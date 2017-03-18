@@ -84,11 +84,14 @@ This role can set the destination of where the appointed law enforcers can seize
 
 Is set individually by an account holder and may be any account - either a group of friends, a trusted accountholder, a government agency or any 3rd party.
 
-
-## Building contract locally
+## Building and running contract locally
 * Have nodejs with npm
- * `brew install node`
-* have [solc](http://solidity.readthedocs.io/en/latest/installing-solidity.html)
- * `npm install solc`
-* Build it!
- * `node build.js`
+    * `brew install node`
+    * `npm install`
+* Using testrpc 
+    * `npm install -g ethereumjs-testrpc`
+    * `npm run testrpc`
+* Or run *geth* in a container
+    * `npm run docker`
+* Run it!
+    * `node run install-contract`
